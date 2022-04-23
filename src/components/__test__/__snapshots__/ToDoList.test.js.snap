@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendering ToDoList component correctly ToDoList with items matches the snapshot 1`] = `
+<ul
+  className="todo-list"
+>
+  <li
+    className="todo-item done"
+  >
+    <span
+      className="todo-item-title"
+      onClick={[Function]}
+    >
+      Do Home Work (completed)
+    </span>
+    <span
+      className="button-delete"
+      onClick={[Function]}
+    >
+      X
+    </span>
+  </li>
+  <li
+    className="todo-item"
+  >
+    <span
+      className="todo-item-title"
+      onClick={[Function]}
+    >
+      Do House Work
+    </span>
+    <span
+      className="button-delete"
+      onClick={[Function]}
+    >
+      X
+    </span>
+  </li>
+  <li
+    className="todo-item"
+  >
+    <span
+      className="todo-item-title"
+      onClick={[Function]}
+    >
+      Play soccer
+    </span>
+    <span
+      className="button-delete"
+      onClick={[Function]}
+    >
+      X
+    </span>
+  </li>
+  <li
+    className="todo-item"
+  >
+    <span
+      className="todo-item-title"
+      onClick={[Function]}
+    >
+      Do task
+    </span>
+    <span
+      className="button-delete"
+      onClick={[Function]}
+    >
+      X
+    </span>
+  </li>
+</ul>
+`;
+
+exports[`rendering ToDoList component correctly ToDoList with no items matches the snapshot 1`] = `
+<ul
+  className="todo-list"
+/>
+`;

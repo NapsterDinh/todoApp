@@ -1,0 +1,101 @@
+*{
+  box-sizing: border-box;
+}
+
+body
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.App
+{
+  
+}
+
+.text-center
+{
+  text-align: center;
+}
+
+.App-header
+{
+  text-align: center;
+}
+
+span{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+span:not(:first-child)
+{
+  margin-top: 30px;
+}
+
+.input-container
+{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-container input
+{
+  padding: 10px 5px;
+  min-width: 300px;
+}
+.input-container button
+{
+  background: transparent;
+  outline: none;
+  border: none;
+  color: rgb(23, 84, 252);
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.todo-list
+{
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+.todo-list li 
+{
+  position: relative;
+  border: 1px solid blue;
+  padding: 10px 40px 10px 10px;
+  background-color: #DAE8FC;
+  margin: 20px auto;
+}
+
+.todo-list li.done
+{
+  background-color: #D5E8D4;
+}
+
+.todo-list li span.todo-item-title
+{
+  text-align: left;
+  cursor: pointer;
+  max-width: 400px;
+  display:-webkit-box;
+  -webkit-line-clamp:1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}
+.todo-list li span:not(.todo-list li span.todo-item-title)
+{
+  position: absolute;
+  top: -2px;
+  right: 10px;
+  margin-top: 0;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+
