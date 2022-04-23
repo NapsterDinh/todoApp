@@ -15,8 +15,11 @@ jobs:
     steps:
       - checkout
       - run:
-          name: "Say hello"
-          command: "echo Hello, World!"
+          name: Build project
+          command: npm run build
+      - run: 
+          name: Deploy to Firebase
+          command: npm run firebase -- deploy -- token 1//0gMn-LZNPph5kCgYIARAAGBASNwF-L9IrlZa4Xxk9VPJwp1xIBgo01Q2SQGsST5XV8stVeExbYY4csdQq6nkQDU5mvK24cXWNvDE -- only hosting
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
